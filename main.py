@@ -5,6 +5,8 @@ from yolo_detector import YOLODetector
 from ocr_parser import OCRParser
 from aggregator import Aggregator
 from comparer import Comparer
+import torch
+import torch.nn as nn
 
 IMG_ROOT = "images"
 
