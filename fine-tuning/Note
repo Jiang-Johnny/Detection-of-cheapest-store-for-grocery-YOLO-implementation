@@ -1,0 +1,1 @@
+Fine-Tuned model for 5 epochs performs well though the new classes are not saved. This issue needs to be addressed in order to use it to detect the new classes.
