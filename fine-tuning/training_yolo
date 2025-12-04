@@ -1,0 +1,26 @@
+from ultralytics import YOLO
+import multiprocessing
+
+def main():
+
+    model = YOLO("yolo12x.pt")
+
+    model.train(
+
+        data="data.yaml", 
+        epochs=5,
+        imgsz=640,
+        batch=4,
+        name="yolov12x_freiburg_ft",
+        exist_ok=True,
+        project="dataset"
+
+    )
+
+    model.save("yolov12x_freiburg_ft.pt")
+
+if __name__ == "__main__":
+
+    main()
+
+
