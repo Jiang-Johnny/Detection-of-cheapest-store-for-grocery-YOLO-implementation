@@ -1,3 +1,4 @@
+#Training YOLO on freiberg grocery dataset
 from ultralytics import YOLO
 import multiprocessing
 
